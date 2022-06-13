@@ -14,14 +14,15 @@ escreva("O transporte escolhido foi ") ok
 1.2)cabe apenas 2 Rodas? OK
 		1.2.1)É motorizado? Ok
   				- Bicicleta(Não)OK
-		1.2.2) É Veloz?
+	
 		- Moto(sim) ok
-		- Trator(não)	ok
+		
 		
 
 1.3)Usado para passeio? 
 		1.3.1)Cabe apenas uma pessoa?
 		- Caminhão (não)OK
+		- Trator Sim
 
 1.4)Cabe mais de 5 pessoas ok
 - Ônibus (sim) ok

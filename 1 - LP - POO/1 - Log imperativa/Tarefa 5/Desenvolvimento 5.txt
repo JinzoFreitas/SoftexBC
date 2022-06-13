@@ -60,49 +60,50 @@ escreva("É terrestre?")
 leia(r)
 ESCOLHA r
 CASO 1
-   escreva("Tem Pneus?")
-   leia(r)
-   ESCOLHA r
-   CASO 0
-      escreva("O transporte escolhido foi o Trem")
-   CASO 1
-      escreva("Possui apenas 2 rodas?")
+  escreva("Tem Pneus?")
+  leia(r)
+  ESCOLHA r
+  CASO 0
+    escreva("O transporte escolhido foi o Trem")
+  CASO 1
+    escreva("Possui apenas 2 rodas?")
+    leia(r)
+    ESCOLHA r
+    CASO 1
+      escreva("É motorizado?")
       leia(r)
       ESCOLHA r
+      CASO 0
+	escreva("O transporte escolhido foi a Bicicleta")
       CASO 1
-	escreva("É motorizado?")
-        leia(r)
-        ESCOLHA r
-        CASO 0
-	   escreva("O transporte escolhido foi a Bicicleta")
-	CASO 1
-	   escreva("É Veloz?")
-	   leia(r)
-	   ESCOLHA r
-	   CASO 1
-	     escreva("O transporte escolhido foi a Moto")
-	   CASO 0
-  	     escreva("O transporte escolhido foi o Trator")	
-           FIMESCOLHA
+	escreva("O transporte escolhido foi a Moto")
+      FIMESCOLHA  	    
+      CASO 0
+	escreva("Usado para passeio?")
+	leia(r)
+	ESCOLHA r
 	CASO 0
-	   escreva("Usado para passeio?")
-	   leia(r)
-	   ESCOLHA r
-	   CASO 0
-	      escreva("O transporte escolhido foi o Caminhão")
-	   CASO 1 
-              escreva("Cabe mais de 5 pessoas?")
-	      leia(r)
-	      ESCOLHA r
-	      CASO 1
-     		escreva("O transporte escolhido foi o Ônibus")
-	      CASO 0
-        	escreva("O transporte escolhido foi o Carro")
-	      FIMESCOLHA  
-	   FIMESCOLHA		
-	FIMESCOLHA      	 
-      FIMESCOLHA
-   FIMESCOLHA	 	
+	  escreva("Cabe apenas uma pessoa")
+	  leia(r)
+          ESCOLHA r
+	  CASO 1
+	    escreva("O transporte escolhido foi o Trator")     
+	  CASO 0
+	    escreva("O transporte escolhido foi o Caminhão") 
+	  FIMESCOLHA
+	CASO 1 
+          escreva("Cabe mais de 5 pessoas?")
+	  leia(r)
+	  ESCOLHA r
+	  CASO 1
+     	    escreva("O transporte escolhido foi o Ônibus")
+	  CASO 0
+            escreva("O transporte escolhido foi o Carro")
+	  FIMESCOLHA  
+	FIMESCOLHA		
+      FIMESCOLHA      	 
+    FIMESCOLHA
+  FIMESCOLHA	 	
 CASO 0
   escreva("É aquático?")
   leia(r)
@@ -127,8 +128,8 @@ CASO 0
 	  escreva("O transporte escolhido foi a Lancha")     
 	CASO 0
 	  escreva("O transporte escolhido foi o Barco")      
-	FIMESCOLHA
-     FIMESCOLHA 
+        FIMESCOLHA
+      FIMESCOLHA 
     FIMESCOLHA
   FIMESCOLHA   
   CASO 0
