@@ -1,0 +1,68 @@
+Softex - Recife
+Aluno: Janderson Freitas
+Desenvolvimento 4
+
+
+Elabore um algoritmo que representa um cadastro. Ele deve ler os seguintes dados fornecidos pelo usuário:
+
+- Nome
+- Endereço
+- Cidade
+- CPF
+- RG
+- Idade
+- Nome do pai
+- Nome da mãe
+- Peso
+- Renda bruta
+
+Apresente as informações solicitadas no final do cadastro.
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+Resposta:
+
+
+- nome Caracter
+- endereco Caracter
+- cidade Caracter
+- cpf Inteiro
+- rg Inteiro
+- idade Inteiro 
+- nomePai Caracter
+- nomeMae Caracter
+- peso Real
+- rendabruta Real
+-
+- escreva("Bem-Vindo ao Cadastro")
+- escreva("	")
+- escreva("Digite seu nome: ")
+- leia(nome)
+- escreva("Digite seu endereço: ")
+- leia(endereco)
+- escreva("Digite o nome da sua cidade: ")
+- leia(cidade)
+- escreva("Digite seu CPF(só números): ")
+- leia(cpf)
+- escreva("Digite seu RG(só números): ")
+- leia(rg)
+- escreva("Digite sua idade: ")
+- leia(idade)
+- escreva("Digite o nome do seu pai: ")
+- leia(nomePai)
+- escreva("Digite o nome da sua mãe: ")
+- leia(nomeMae)
+- escreva("Digite seu peso: ")
+- leia(peso)
+- escreva("Digite sua renda bruta: ")
+- leia(rendaBruta)
+-
+- escreva("O seu nome é ",nome)
+- escreva("O seu endereço é ",endereco)
+- escreva("O nome da sua cidade é ",cidade)
+- escreva("O número do seu CPF é ",cpf)
+- escreva("O número do seu RG é ",rg)
+- escreva("A sua idade é ",idade)
+- escreva("O nome do seu pai é ",nomePai)
+- escreva("O nome da sua mãe é ",nomeMae)
+- escreva("O seu peso é ",peso)
+- escreva("A sua renda bruta é ",rendaBruta)
+-
