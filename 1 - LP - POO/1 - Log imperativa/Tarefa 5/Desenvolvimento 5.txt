@@ -83,7 +83,7 @@ CASO 1
 	leia(r)
 	ESCOLHA r
 	CASO 0
-	  escreva("Cabe apenas uma pessoa")
+	  escreva("Cabe apenas uma pessoa?")
 	  leia(r)
           ESCOLHA r
 	  CASO 1
