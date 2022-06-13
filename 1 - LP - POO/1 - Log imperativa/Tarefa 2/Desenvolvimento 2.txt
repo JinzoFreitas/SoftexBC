@@ -1,0 +1,23 @@
+Softex - Recife
+Aluno: Janderson Freitas
+
+Em uma sala de aula, há vinte e cinco alunos.
+Entre eles, existem os grupos dos que gostam de Português (P) e os que gostam de Matemática (M).
+Eles são divididos conforme a ilustração 1 em anexo.
+
+Depois de um tempo, chegaram mais onze alunos nessa turma e o professor organizou-a conforme a ilustração 2 em anexo.
+
+No entanto, o professor se ausentou da sala por cinco minutos e, ao voltar, percebeu que um aluno que gosta de uma das disciplinas havia trocado de lugar com alguém que prefere a outra, e a turma ficou organizada conforme a ilustração 3 em anexo.
+
+Sabendo que o professor tem dificuldade de memorizar, informe como ele descobriu a cadeira em que houve a troca de alunos e qual a disciplina de cada um.
+
+
+Resposta:
+
+1) Como o porfessor tem dificuldade de memorização, qualquer lógica relacionada a locais especificos, identidades dos alunos ou sequências lógicas muito complexas não seriam úteis para ele.
+
+2) Para a sala com 25 alunos (imag 1), percebemos que se olharmos em fila ou em coluna eles estão dispostos de formas variadas, mas cada fila e coluna tem sempre no minimo 1 aluno, e são combinações do tipo: 3P2M, 3M2P e 4M1P, lembrando que 14 alunos gostam de Matemática e 11 de Português. 
+
+3) Para a sala com 36 alunos (imag 2), ele adiciona +1 linha e +1 coluna, percebemos agora que em fila ou em coluna eles tambem estão dispostos de formas variadas, mas cada fila e coluna tem sempre no minimo 2 aluno, e são combinações do tipo: 4P2M, 4M2P, lembrando que agora 18 alunos gostam de Matemática e 18 de Português.
+
+4) O professor vai descobrir facilmente a troca do aluno (imag 3), se ele observar uma nova combinação que não foi feita por ele, 3M3P, na linha e na coluna representada pelo aluno.
