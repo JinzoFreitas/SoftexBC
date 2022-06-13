@@ -1,0 +1,44 @@
+Softex - Recife
+Aluno: Janderson Freitas
+Desenvolviemnto 3
+		 
+
+Em uma inscrição, o usuário informou os seguintes dados:
+
+- Nome: José Almeida da Silva
+- CPF: 12345678900
+- RG: 9517530
+- Altura: 1,78
+- Endereço: Rua A, 380 – Centro – Recife/PE
+
+No algoritmo, descreva como será:
+1. A proposta das variáveis;
+2. Elaborada a declaração das variáveis;
+3. Utilizado o comando de atribuição.
+
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+Respsota:
+
+1.
+
+- Nome irá receber letras e espaços.
+- CPF irá receber apenas números inteiros.  
+- RG irá receber apenas números inteiros. 
+- Altura irá receber números com até duas casas decimais. 
+- Endereço irá receber letras e espaços, assim como sinais.
+
+2.
+
+- Nome Caracter
+- CPF Inteiro
+- RG Inteiro
+- Altura Real
+- Endereço Caracter
+
+3. 
+
+- Nome <- "José Almeida da Silva"
+- CPF <- 12345678900
+- RG <- 9517530
+- Altura <- 1,78
+- Endereço <- "Rua A, 380 – Centro – Recife/PE"
