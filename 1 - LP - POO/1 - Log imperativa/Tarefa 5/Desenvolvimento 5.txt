@@ -1,0 +1,161 @@
+Softex - Recife
+Aluno: Janderson Freitas
+Desenvolvimento 5
+
+Elabore um algoritmo que possa descobrir, através de perguntas e respostas, qual meio de transporte o usuário está pensando.
+O usuário deverá escolher uma das seguintes opções:
+
+- Trator
+- Moto
+- Bicicleta
+- Trem
+- Carro
+- Caminhão
+- Ônibus
+- Paraquedas
+- Balão
+- Avião
+- Helicóptero
+- Submarino
+- Barco
+- Navio
+- Lancha
+
+Para chegar ao resultado, só devem ser usadas perguntas que retornem "Sim" ou "Não".
+
+Exemplo:
+É terrestre? Sim.
+Cabe apenas uma pessoa? Sim.
+É pesado? Não.
+Tem pedal? Sim.
+Então, o transporte escolhido foi a bicicleta.
+
+Para chegar ao resultado de cada uma das opções, use o modelo ilustrado na imagem em anexo. 
+========================================================================
+
+escreva("Programa para Descobrir o Transporte Escolhido")
+escreva("")
+escreva("Pense em um meio de transporte da lista abaixo e o programa irá descobrir qual é:
+- Trator
+- Moto
+- Bicicleta
+- Trem
+- Carro
+- Caminhão
+- Ônibus
+- Paraquedas
+- Balão
+- Avião
+- Helicóptero
+- Submarino
+- Barco
+- Navio
+- Lancha ")
+
+escreva("Para cada pergunta a seguir, Digite '1' para SIM ou '0' para NÃO")
+
+r Interiro
+
+escreva("É terrestre?")
+leia(r)
+ESCOLHA r
+CASO 1
+   escreva("Tem Pneus?")
+   leia(r)
+   ESCOLHA r
+   CASO 0
+      escreva("O transporte escolhido foi o Trem")
+   CASO 1
+      escreva("Possui apenas 2 rodas?")
+      leia(r)
+      ESCOLHA r
+      CASO 1
+	escreva("É motorizado?")
+        leia(r)
+        ESCOLHA r
+        CASO 0
+	   escreva("O transporte escolhido foi a Bicicleta")
+	CASO 1
+	   escreva("É Veloz?")
+	   leia(r)
+	   ESCOLHA r
+	   CASO 1
+	     escreva("O transporte escolhido foi a Moto")
+	   CASO 0
+  	     escreva("O transporte escolhido foi o Trator")	
+           FIMESCOLHA
+	CASO 0
+	   escreva("Usado para passeio?")
+	   leia(r)
+	   ESCOLHA r
+	   CASO 0
+	      escreva("O transporte escolhido foi o Caminhão")
+	   CASO 1 
+              escreva("Cabe mais de 5 pessoas?")
+	      leia(r)
+	      ESCOLHA r
+	      CASO 1
+     		escreva("O transporte escolhido foi o Ônibus")
+	      CASO 0
+        	escreva("O transporte escolhido foi o Carro")
+	      FIMESCOLHA  
+	   FIMESCOLHA		
+	FIMESCOLHA      	 
+      FIMESCOLHA
+   FIMESCOLHA	 	
+CASO 0
+  escreva("É aquático?")
+  leia(r)
+  ESCOLHA r
+  CASO 1
+    escreva("Anda por baixo da Agua?")
+    leia(r)
+    ESCOLHA r
+    CASO 1
+      escreva("O transporte escolhido foi o Submarino") 
+    CASO 0
+      escreva("Possui grande tripulação?")
+      leia(r)
+      ESCOLHA r
+      CASO 1
+        escreva("O transporte escolhido foi o Navio")  
+      CASO 0
+        escreva("É veloz?")
+	leia(r)
+	ESCOLHA r
+	CASO 1
+	  escreva("O transporte escolhido foi a Lancha")     
+	CASO 0
+	  escreva("O transporte escolhido foi o Barco")      
+	FIMESCOLHA
+     FIMESCOLHA 
+    FIMESCOLHA
+  FIMESCOLHA   
+  CASO 0
+    escreva("Possui Hélice?")
+    leia(r)
+    ESCOLHA r
+    CASO 1
+      escreva("Possui Rodas?")
+      leia(r)
+      ESCOLHA r
+      CASO 1
+	escreva("O transporte escolhido foi o Avião")     
+      CASO 0
+	escreva("O transporte escolhido foi o Helicoptero")      
+      FIMESCOLHA     
+    CASO 0
+      escreva("Cabe apenas uma pessoa?")
+      leia(r)
+      ESCOLHA r
+      CASO 1
+	escreva("O transporte escolhido foi o Paraquedas")     
+      CASO 0
+	escreva("O transporte escolhido foi o Balão")      
+      FIMESCOLHA
+    FIMESCOLHA        
+  FIMESCOLHA
+FIMESCOLHA	
+
+
+
