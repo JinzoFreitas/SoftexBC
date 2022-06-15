@@ -1,0 +1,24 @@
+Janderson Freitas
+
+há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+
+25x4 = 100 alunos no total
+
+1) solicitar o nome e a nota
+
+- nome char 
+- nota Real (0,0 - 10,0)
+- turma char (A, B, C ou D)
+
+2) Armazenar quantos foram aprovados
+
+- se nota > 7,0
+- aprovado <- aprovado + 1
+
+3) Maior nota
+
+- se novaNota > nota
+- nota <- novaNota
+- nome <- aluno1
+
+   

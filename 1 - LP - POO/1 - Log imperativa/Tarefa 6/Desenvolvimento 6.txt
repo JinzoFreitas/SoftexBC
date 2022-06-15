@@ -1,0 +1,143 @@
+Softex - Recife
+Aluno: Janderson Freitas
+Desenvolvimento 6
+
+
+
+Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+
+Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos. Depois, informe quantos deles foram aprovados, de que turma são, qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+
+Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+
+ATENÇÃO: As notas por turma não podem se repetir.
+======================================================================================
+Resposta:
+
+algoritmo: "Resultado vestibular"
+
+var:
+
+nome Caracter
+aluno_primeiro Caracter
+aprovadosA Inteiro
+aprovadosB Inteiro
+aprovadosC Inteiro
+aprovadosD Inteiro
+nota Real
+notamaxA Real
+notamaxB Real
+notamaxC Real
+notamaxD Real
+maiorNota Real
+
+inicio:
+
+escreval("Alunos Truma A")
+para x de 1 ate 2 faca
+  escreva("Digite o nome do aluno:")
+  leia(nome)
+  escreva("Digite a nota do aluno:")
+  leia(nota)
+  se (nota >= 7) entao
+    aprovadosA <- aprovadosA + 1
+  se (nota > notamaxA) entao
+    notamaxA <- nota
+    aluno_primeiro <- nome
+  senao
+    se (nota == notamaxA) entao
+      aluno_primeiro <- aluno_primeiro + ", " + nome
+    fimse
+  fimse
+fimpara
+
+maiorNota <- notamaxA 
+
+escreval("Alunos Truma B")
+para x de 1 ate 2 faca
+  escreva("Digite o nome do aluno:")
+  leia(nome)
+  escreva("Digite a nota do aluno:")
+  leia(nota)
+  se (nota > 7) entao
+    aprovadosB <- aprovadosB + 1
+  fimse
+  se (nota > notamaxB) entao
+    notamaxB <- nota
+  fimse
+  se (nota > maiorNota)
+    maiorNota <- nota
+    aluno_primeiro <- nome
+  senao
+    se (nota == maiorNota) entao
+      aluno_primeiro <- aluno_primeiro + ", " + nome
+    fimse
+  fimse
+fimpara
+
+
+if nortamaxB > maiorNota :
+  maiorNota = maior_notaB
+  aluno_primeiro = alunoB
+elif nortamaxB == maiorNota :
+  aluno_primeiro = aluno_primeiro + "; " + alunoB
+
+
+escreval("Alunos Truma C")
+para x de 1 ate 2 faca
+  escreva("Digite o nome do aluno:")
+  leia(nome)
+  escreva("Digite a nota do aluno:")
+  leia(nota)
+  se (nota > 7) entao
+    aprovadosC <- aprovadosC + 1
+  fimse
+  se (nota > notamaxC) entao
+    notamaxC <- nota
+    aluno_primeiro <- nome
+  senao
+    se (nota == notamaxC)
+      aluno_primeiro <- aluno_primeiro + ", " + nome
+    fimse
+  fimse
+fimpara
+
+if maior_notaB > maior_nota1 :
+  maior_nota1 = maior_notaB
+  aluno_primeiro = alunoB
+elif maior_notaB == maior_nota1 :
+  aluno_primeiro = aluno_primeiro + "; " + alunoB
+
+escreval("Alunos Truma D")
+para x de 1 ate 2 faca
+  escreva("Digite o nome do aluno:")
+  leia(nome)
+  escreva("Digite a nota do aluno:")
+  leia(nota)
+  se (nota > 7) entao
+    aprovadosD <- aprovadosD + 1
+  fimse
+  se (nota > notamaxD) entao
+    notamaxD <- nota
+    aluno_primeiro <- nome
+  senao
+    se (nota == notamaxD) entao
+      aluno_primeiro <- aluno_primeiro + ", " + nome
+    fimse
+  fimse
+fimpara
+
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+  
+

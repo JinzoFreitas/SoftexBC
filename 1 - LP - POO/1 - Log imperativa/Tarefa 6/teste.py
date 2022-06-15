@@ -14,11 +14,8 @@ for x in range(0,3):
   elif nota == maior_notaA :
     alunoA = alunoA + "; " + nome
 
-if maior_notaA > maior_nota1 :
-  maior_nota1 = maior_notaA
-  aluno1 = alunoA
-elif maior_notaA == maior_nota1 :
-  aluno1 = aluno1 + ", " + alunoA
+maior_nota1 = maior_notaA
+aluno1 = alunoA
 
 print("Alunos da turma B")
 for x in range(0,3):
