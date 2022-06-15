@@ -59,7 +59,7 @@ para x de 1 ate 2 faca
   leia(nome)
   escreva("Digite a nota do aluno:")
   leia(nota)
-  se (nota > 7) entao
+  se (nota >= 7) entao
     aprovadosB <- aprovadosB + 1
   fimse
   se (nota > notamaxB) entao
@@ -78,9 +78,9 @@ fimpara
 
 if nortamaxB > maiorNota :
   maiorNota = maior_notaB
-  aluno_primeiro = alunoB
+  aluno_primeiro <- nome
 elif nortamaxB == maiorNota :
-  aluno_primeiro = aluno_primeiro + "; " + alunoB
+  aluno_primeiro <- aluno_primeiro + "; " + nome
 
 
 escreval("Alunos Truma C")
@@ -89,7 +89,7 @@ para x de 1 ate 2 faca
   leia(nome)
   escreva("Digite a nota do aluno:")
   leia(nota)
-  se (nota > 7) entao
+  se (nota >= 7) entao
     aprovadosC <- aprovadosC + 1
   fimse
   se (nota > notamaxC) entao
@@ -102,11 +102,11 @@ para x de 1 ate 2 faca
   fimse
 fimpara
 
-if maior_notaB > maior_nota1 :
-  maior_nota1 = maior_notaB
-  aluno_primeiro = alunoB
-elif maior_notaB == maior_nota1 :
-  aluno_primeiro = aluno_primeiro + "; " + alunoB
+if nortamaxC > maiorNota :
+  maiorNota = maior_notaC
+  aluno_primeiro <- nome
+elif nortamaxC == maiorNota :
+  aluno_primeiro <- aluno_primeiro + "; " + nome
 
 escreval("Alunos Truma D")
 para x de 1 ate 2 faca
@@ -114,7 +114,7 @@ para x de 1 ate 2 faca
   leia(nome)
   escreva("Digite a nota do aluno:")
   leia(nota)
-  se (nota > 7) entao
+  se (nota >= 7) entao
     aprovadosD <- aprovadosD + 1
   fimse
   se (nota > notamaxD) entao
@@ -126,6 +126,26 @@ para x de 1 ate 2 faca
     fimse
   fimse
 fimpara
+
+if nortamaxD > maiorNota :
+  maiorNota <- maior_notaD
+  aluno_primeiro <- nome
+elif nortamaxD == maiorNota :
+  aluno_primeiro <- aluno_primeiro + "; " + nome
+
+total_aprovados <- aprovadosA + aprovadosB + aprovadosC + aprovadosD 
+
+escreva("Passaram no vestibular", total_aprovados, "Alunos no total")
+escreva("Dos aprovados: ", aprovadosA," foram da turma A;" )
+escreva(aprovadosB," da turma B;")
+escreva(aprovadosC, " da turma C; " )
+escreva(aprovadosD, " da turma D. " )
+escreva("A Maior nota da Truma A foi :", notamaxA)
+escreva("A Maior nota da Truma B foi :", notamaxB)
+escreva("A Maior nota da Truma C foi :", notamaxC)
+escreva("A Maior nota da Truma D foi :", notamaxD)
+escreva("O(s) aluno(os)", aluno_primeiro, " ficou em primeiro lugar geral, com nota", maiorNota)
+
 
 fimalgoritmo
 
