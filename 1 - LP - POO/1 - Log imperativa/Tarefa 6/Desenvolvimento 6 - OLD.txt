@@ -16,7 +16,7 @@ Resposta:
 
 algoritmo: "Resultado vestibular"
 
-variaveis:
+var:
 
 nome Caracter
 aluno_primeiro Caracter
@@ -41,19 +41,17 @@ para x de 1 ate 2 faca
   leia(nota)
   se (nota >= 7) entao
     aprovadosA <- aprovadosA + 1
-  fimse
   se (nota > notamaxA) entao
     notamaxA <- nota
-  fimse
-  se (nota > maiorNota)
-    maiorNota <- nota
     aluno_primeiro <- nome
   senao
-    se (nota == maiorNota) entao
+    se (nota == notamaxA) entao
       aluno_primeiro <- aluno_primeiro + ", " + nome
     fimse
   fimse
-fimpara 
+fimpara
+
+maiorNota <- notamaxA 
 
 escreval("Alunos Truma B")
 para x de 1 ate 2 faca
@@ -77,6 +75,14 @@ para x de 1 ate 2 faca
   fimse
 fimpara
 
+
+if nortamaxB > maiorNota :
+  maiorNota = maior_notaB
+  aluno_primeiro <- nome
+elif nortamaxB == maiorNota :
+  aluno_primeiro <- aluno_primeiro + "; " + nome
+
+
 escreval("Alunos Truma C")
 para x de 1 ate 2 faca
   escreva("Digite o nome do aluno:")
@@ -88,16 +94,19 @@ para x de 1 ate 2 faca
   fimse
   se (nota > notamaxC) entao
     notamaxC <- nota
-  fimse
-  se (nota > maiorNota)
-    maiorNota <- nota
     aluno_primeiro <- nome
   senao
-    se (nota == maiorNota) entao
+    se (nota == notamaxC)
       aluno_primeiro <- aluno_primeiro + ", " + nome
     fimse
   fimse
 fimpara
+
+if nortamaxC > maiorNota :
+  maiorNota = maior_notaC
+  aluno_primeiro <- nome
+elif nortamaxC == maiorNota :
+  aluno_primeiro <- aluno_primeiro + "; " + nome
 
 escreval("Alunos Truma D")
 para x de 1 ate 2 faca
@@ -108,18 +117,21 @@ para x de 1 ate 2 faca
   se (nota >= 7) entao
     aprovadosD <- aprovadosD + 1
   fimse
-  se (nota > notamaxA) entao
+  se (nota > notamaxD) entao
     notamaxD <- nota
-  fimse
-  se (nota > maiorNota)
-    maiorNota <- nota
     aluno_primeiro <- nome
   senao
-    se (nota == maiorNota) entao
+    se (nota == notamaxD) entao
       aluno_primeiro <- aluno_primeiro + ", " + nome
     fimse
   fimse
 fimpara
+
+if nortamaxD > maiorNota :
+  maiorNota <- maior_notaD
+  aluno_primeiro <- nome
+elif nortamaxD == maiorNota :
+  aluno_primeiro <- aluno_primeiro + "; " + nome
 
 total_aprovados <- aprovadosA + aprovadosB + aprovadosC + aprovadosD 
 
@@ -133,6 +145,7 @@ escreva("A Maior nota da Truma B foi :", notamaxB)
 escreva("A Maior nota da Truma C foi :", notamaxC)
 escreva("A Maior nota da Truma D foi :", notamaxD)
 escreva("O(s) aluno(os)", aluno_primeiro, " ficou em primeiro lugar geral, com nota", maiorNota)
+
 
 fimalgoritmo
 
