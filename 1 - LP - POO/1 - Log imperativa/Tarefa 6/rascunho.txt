@@ -21,4 +21,7 @@ há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
 - nota <- novaNota
 - nome <- aluno1
 
+
+
+
    
