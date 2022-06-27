@@ -23,16 +23,16 @@ void BubbleSort(int vetor[], int tamanho){
 
 void main(){
     
+
     int n, i;
     printf("Digite o tamanho do vetor: ");
     scanf("%d", &n);
     int vetor[n];
-
     for(i=0; i<n; i++){
         printf("Digite o valor da posicição %d: ", i);
         scanf("%d", &vetor[i]);
-
     }
+	
     BubbleSort(vetor,n);
     print("%d", vetor);
 
