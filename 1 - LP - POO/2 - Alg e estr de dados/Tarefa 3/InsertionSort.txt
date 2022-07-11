@@ -19,7 +19,7 @@ def insertion_Sort(array):
 
 # Criação do Vetor de teste
 array = [21, 11, 47, 105, 33, 17, 9, 1, 61, 55, 3, 27, 13, 99, 19, 
-         45, 79, 15, 51, 23, 35, ]
+         45, 79, 15, 51, 23, 35, 37, 111, 41, 301, 107, 63, 55, 87]
 
 insertion_Sort(array)
 
