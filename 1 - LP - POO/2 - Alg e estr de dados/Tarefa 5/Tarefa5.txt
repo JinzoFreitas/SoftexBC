@@ -1,6 +1,6 @@
 # Softex - Recife
 # Janderson Freitas
-# Tarefa 5
+# Unidade 1 - Mod2 - Tarefa 5
 
 '''
 Crie um tipo abstrato de dado (TAD) para manipular números complexos na linguagem Python.
@@ -12,7 +12,7 @@ O método deve:
 '''
 
 class myComplexo:
-    def __init__(self, real, imag, result = 0):
+    def __init__(self, real, imag, *result):
         self.real = real
         self.imag = imag*1j
         self.result = self.real + self.imag
@@ -25,7 +25,7 @@ class myComplexo:
         A = a.result
         B = b.result
         C = c.result
-        return print(f'Resultado da Soma dos três números igual a: {(A+B)+C}')
+        return print(f'Resultado da Soma dos três números igual a: {A+B+C}')
     def sub(a, b, c):
         A = a.result
         B = b.result
