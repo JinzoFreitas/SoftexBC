@@ -1,0 +1,9 @@
+# Softex - Recife
+# Janderson Freitas
+# Unidade 1 - mod2 - Tarefa 6
+
+- Pesquise sobre os grafos e apresente dois exemplos de como são utilizados no contexto tecnológico.
+
+Grafos são estruturas (matemáticas ou de dados, dependendo da área em questão) que estuda as relações entre objetos de um conjunto, formado por vértices e arestas.
+Gigantes de Tecnologia como Facebook e Google fazem uso da Teoria dos Grafos em suas aplicações, sendo as mais notáveis as sugestões de amigos de seus amigos na empresa do Zuckerberg e a definição da melhor rota no Google Maps.
+Há quem diga que a tecnologia de armazenamento de dados em grafos seja o futuro, mas ela já é o presente, só não nos atentamos a isso. O mundo é interconectado, portanto, temos relacionamentos em todas as partes e, como consequência, grafos em tudo. Estudos apontam que os grafos mapeiam de forma mais realista como o cérebro humano processa o mundo que nos rodeia. Dito isso, nada mais normal que modelar esses relacionamentos em um banco de dados que use o relacionamento como parte mais importante. Temos ainda as vantagens de uma abordagem mais performática, mais flexível e adaptável a mudanças.
