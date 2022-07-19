@@ -3,7 +3,8 @@
 # Unidade 1 - Mód2 - Tarefa 7
 
 '''
-Para declarar uma árvore binária em Python, crie uma classe Tree com uma função __init__() que irá instanciar esses três campos de classe: o nó filho esquerdo, o nó filho direito e os dados do nó atual. Os três campos mencionados são a composição de uma árvore binária simples.
+1- Código desenvolvido em Python e ainda em fase de teste. 
+2- Para declarar uma árvore binária em Python, crie uma classe Tree com uma função __init__() que irá instanciar esses três campos de classe: o nó filho esquerdo, o nó filho direito e os dados do nó atual. Os três campos mencionados são a composição de uma árvore binária simples.
 '''
 class Tree:
   def __init__(self, val = None):
