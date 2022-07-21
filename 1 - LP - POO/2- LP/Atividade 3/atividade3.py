@@ -21,7 +21,7 @@ for i in range(temp,0,-1):
     # Imprimi os segundos restantes na tela
     print(f"{i}s")
 
-    # time.sleep(1) a linha espera 1 segundo antes de prosseguir
+    # A linha espera 1 segundo antes de prosseguir
     time.sleep(1)
 
 print("\nBUMMMMMMMMMMMMMMMMMMM!!!!!!")
