@@ -13,7 +13,7 @@ import time
 
 # Recebe o tempo em segundos do contador
 temp = int(input('Digite o tempo da Bomba em segundos: '))
-print("Bomb has been planted")
+print("\nBomb has been planted")
 
 # Repetição para contagem regressiva da bomba
 for i in range(temp,0,-1):

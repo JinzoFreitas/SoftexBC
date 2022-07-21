@@ -1,0 +1,23 @@
+# Softex - Recife
+# Janderson Freitas
+# Unidade 1 - Mod 2 - Atividade 5
+
+'''
+Desenvolva um programa que recebe do usuário nome completo e ano de nascimento que seja entre 1922 e 2021. A partir dessas informações, o sistema mostrará o nome do usuário e a idade que completou, ou completará, no ano atual (2022).
+
+Caso o usuário não digite um número ou apareça um inválido no campo do ano, o sistema informará o erro e continuará perguntando até que um valor correto seja preenchido.
+'''
+
+while True:
+    try:
+        name = input("Digite o nome: ")
+        nasc = int(input(f"Digite o ano de nascimento de {name}: "))
+        a_atual = 2022
+        if (1922<=nasc<=2021):
+            idade = a_atual - nasc
+            print(f"\n- {name} tem {idade} anos de idade em {a_atual}")
+            break
+        else:
+            print("Erro!\nForneça uma data de nascimento entre [1922 - 2021].")
+    except ValueError:
+        print("\nEntrada de dados inválida, tente novamente.\n")        
