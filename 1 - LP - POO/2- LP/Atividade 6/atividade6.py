@@ -18,8 +18,8 @@ Após a seleção, o sistema deve pedir para o usuário inserir o primeiro e seg
 É necessário que o sistema mostre as opções sempre que finalizar uma operação e mostrar o resultado. 
 '''
 
+# Parte operacional da função, onde encontram-se os cálculos. 
 def calc(num1, num2, opera):
-
     if (opera == 1):
         result = num1+num2
         return result        
@@ -38,24 +38,40 @@ def calc(num1, num2, opera):
             return result 
     else:
         err_opera = '\nErro de operação, certifique-se de escolher uma operação válida'
-        return err_opera     
+        return err_opera    
 
 # Laço para tratamento de erro com retorno infinito:
 # o programa só vai rodar após uma entrada válida de dados!
+# e só vai finalizar após o comando pré-definido.
 def main():
     while True:
         try:
-            print("Escolha uma operação a seguir:")
+            print("\nEscolha uma operação a seguir:")
             print("1: Soma\n2: Subtração\n3: Multiplicação\n4: Divisão\n0: Sair")
             opera = (int(input(f'Digite o número da operação escolhida: ')))
+
+            # Condição para fim do programa.
             if opera == 0:
+                print('\nFim do Programa')
+                # Saída do laço e fim da execução do main()
                 break
+            # Entrada dos dados para operação.
             num1 = (float(input('Digite o Primeiro número: ')))
             num2 = (float(input('Digite o Segundo número: ')))
+
+            # Resultado da calculadora.
             resultado = calc(num1,num2,opera)
-        except ValueError:
-            print('Valor inválido, tente novamente!\n')
-        print(f'\nResultado da operação igual a {resultado}')
-    print('\nFim do Programa')     
-       
+            
+            # Verificador de retorno, se calc() retornar str é pq houve erro no processo de operação,
+            # Então o programa só vai retonar a mensagem pura.
+            # Caso não seja, imprimi a mensagem de chamada padrão para o resultado padrão da operação.
+            if type(resultado) != str:
+                print(f'\nResultado da operação é igual a {resultado}')
+            else:
+                print(resultado)    
+             
+        # Mensagem do tratamento de Erro de entrada.
+        except:
+            print('\nValor inválido, tente novamente!')       
+
 main()
