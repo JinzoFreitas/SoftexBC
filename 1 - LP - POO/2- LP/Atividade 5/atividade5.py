@@ -11,13 +11,13 @@ Caso o usuário não digite um número ou apareça um inválido no campo do ano,
 while True:
     try:
         name = input("Digite o nome: ")
-        nasc = int(input(f"Digite o ano de nascimento de {name}: "))
+        a_nasc = int(input(f"Digite o ano de nascimento de {name}: "))
         a_atual = 2022
-        if (1922<=nasc<=2021):
-            idade = a_atual - nasc
+        if (1922 <= a_nasc <= 2021):
+            idade = a_atual - a_nasc
             print(f"\n- {name} tem {idade} anos de idade em {a_atual}")
             break
         else:
-            print("Erro!\nForneça uma data de nascimento entre [1922 - 2021].")
-    except ValueError:
-        print("\nEntrada de dados inválida, tente novamente.\n")        
+            print("\nErro!\nForneça uma data de nascimento entre [1922 - 2021].")
+    except:
+        print("\nEntrada de dados inválida, tente novamente.\n")       
