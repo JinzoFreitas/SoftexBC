@@ -1,0 +1,39 @@
+#Softex - Recife
+#Janderson Freitas
+#unidade 1 - mod2 - Atividade 2
+
+'''
+Desenvolva um código que utilize as seguintes características de um veículo:
+- Quantidade de rodas;
+- Peso bruto em quilogramas;
+- Quantidade de pessoas no veículo.
+
+Com essas informações, o programa mostrará qual é a melhor categoria de habilitação para o veículo informado a partir das condições:
+A: Veículos com duas ou três rodas;
+B: Veículos com quatro rodas, que acomodam até oito pessoas e seu peso é de até 3500 kg;
+C: Veículos com quatro rodas ou mais e com peso entre 3500 e 6000 kg;
+D: Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas;
+E: Veículos com quatro rodas ou mais e com mais de 6000 kg.
+'''
+
+n_rodas, peso, n_pessoas = 0,0,0
+
+n_rodas = int(input('Digite o número de rodas do seu veículo: '))
+peso = float(input('Digite o peso máximo do seu veículo: '))
+n_pessoas = int(input('Digite o número máximo de pessoas que cabem no seu veículo: '))
+
+if (n_rodas == 2) or (n_rodas == 3) :
+    print('Categoria A')
+elif (n_rodas == 4) and (n_pessoas <= 8) and (peso <= 3500):
+    print('Categoria B')
+elif (n_rodas >= 4):
+    if (3500 <= peso <= 6000):
+        print('Categoria C')
+    elif (n_pessoas > 8):
+        print('Categoria D')
+    elif (peso > 6000):
+        print('Categoria E')
+    else:
+      print("Tipo de veículo não encontrado, revise seus dados ou entre em contato com o departamento de trânsito da sua região!")    
+else:
+  print("Tipo de veículo não encontrado, revise seus dados ou entre em contato com o departamento de trânsito da sua região!")        
