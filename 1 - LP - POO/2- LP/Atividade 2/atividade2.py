@@ -22,7 +22,7 @@ n_rodas = int(input('Digite o número de rodas do seu veículo: '))
 peso = float(input('Digite o peso máximo do seu veículo: '))
 n_pessoas = int(input('Digite o número máximo de pessoas que cabem no seu veículo: '))
 
-if (n_rodas == 2) or (n_rodas == 3) :
+if (n_rodas == 2) or (n_rodas == 3):
     print('Categoria A')
 elif (n_rodas == 4) and (n_pessoas <= 8) and (peso <= 3500):
     print('Categoria B')
