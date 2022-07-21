@@ -16,9 +16,9 @@ def main():
     nota1 = float(input(" Digite sua primeira nota: "))
     nota2 = float(input(" Digite sua segunda nota: "))
     faltas = int(input(f" Digite quantas faltas {nome} tem: "))
-    __aprovacao__(nome,nota1,nota2,faltas)
+    aprovacao(nome,nota1,nota2,faltas)
 
-def __aprovacao__(nome, nota1, nota2, falta ):
+def aprovacao(nome, nota1, nota2, falta ):
 
     media = (nota1 + nota2)/2
     if (media < 7):
