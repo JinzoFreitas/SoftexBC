@@ -25,7 +25,7 @@ def urna():
         }
 
     while True:
-        
+
         try:
             print('\nBem vindo ao aplicativo de Urna eletrônica')
             voto = int(input("\nDigite o número do seu candidato e pressione Enter: "))
@@ -63,4 +63,18 @@ def urna():
     print(f'Brancos somaram {brancos} votos')
     print(f'Nulos somaram {nulos} votos')
     
-urna()        
+urna()
+
+
+
+# Testar condições de empate entre candidatos.
+'''
+resultado = [""]
+for candidato, n_votos in candidatos.items():
+    if n_votos == maior_votos:
+        resultado.append(chave)
+if len(resultado) > 1:
+    print('Houve empate entre os cadidatos: ', resultado)       
+else:
+    print(f'\nO vencedor foi o canditado {resultado[0]}, Parabens!')
+'''
