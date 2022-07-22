@@ -1,0 +1,66 @@
+# Softex - Recife
+# Janderson Freitas
+# Unidade 1 - Mód 2 - Atividade 7 - Urna
+
+'''
+Desenvolva um código que simule uma eleição com três candidatos.
+- candidato_X => 889
+- candidato_Y => 847
+- candidato_Z => 515
+- branco => 0
+
+O código deve perguntar se deseja finalizar a votação depois do voto. Caso o número do voto não corresponda a nenhum candidato ou seja branco, ele deve ser tratado como nulo. Se for inserido um texto ao invés de número, o código deve retornar uma mensagem para votar novamente.
+
+Quando a votação for finalizada, o código deverá mostrar o vencedor, aquele com o maior número de votos e, também, a quantidade de votos de cada candidato, os brancos e nulos
+'''
+
+def urna():
+
+    brancos, nulos = 0,0
+    candidatos = {
+
+            'X' : 0,
+            'Y' : 0,
+            'Z' : 0
+        }
+
+    while True:
+        
+        try:
+            print('\nBem vindo ao aplicativo de Urna eletrônica')
+            voto = int(input("\nDigite o número do seu candidato e pressione Enter: "))
+            if (voto == 889):
+                print('Voto recebido, obrigado!')
+                candidatos['X'] += 1
+            elif (voto == 847):
+                print('Voto recebido, obrigado!')
+                candidatos['Y'] += 1 
+            elif (voto == 515):
+                print('Voto recebido, obrigado!')
+                candidatos['Z'] += 1 
+            elif (voto == 0):
+                print('Voto recebido, obrigado!')
+                brancos += 1  
+            else:
+                print('Voto recebido, obrigado!')
+                nulos += 1               
+        except ValueError:
+            print('\nError!\nEntrada inválida, tente novamente.')
+        
+        sair = input("Deseja continuar a votação? (s/n): ")
+        if (sair.lower() == 'n'):
+            break
+    
+    maior_votos = max(candidatos.values())
+    for candidato, n_votos in candidatos.items():
+        if n_votos == maior_votos:
+            break
+    print(f'\nO vencedor foi o canditado {candidato}, Parabens!')
+    print('\nResultado da Votação:')
+    print('Candidato X obteve: ', candidatos['X'], 'votos')
+    print('Candidato Y obteve: ', candidatos['Y'], 'votos')
+    print('Candidato Z obteve: ', candidatos['Z'], 'votos')
+    print(f'Brancos somaram {brancos} votos')
+    print(f'Nulos somaram {nulos} votos')
+    
+urna()        
