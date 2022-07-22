@@ -43,7 +43,7 @@ def calc(num1, num2, opera):
 # Laço para tratamento de erro com retorno infinito:
 # o programa só vai rodar após uma entrada válida de dados!
 # e só vai finalizar após o comando pré-definido.
-def main():
+def main_calc():
     while True:
         try:
             print("\nEscolha uma operação a seguir:")
@@ -74,4 +74,4 @@ def main():
         except:
             print('\nValor inválido, tente novamente!')       
 
-main()
+main_calc()
