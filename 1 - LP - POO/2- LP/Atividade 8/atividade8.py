@@ -56,7 +56,7 @@ media_max = df['Média'].max()
 
 # Criando Arquivo alunos_situação pois o metodo to_csv() requer um arquivo existente par gravar os dados.
 with open('1 - LP - POO/2- LP/Atividade 8/alunos_situacao.csv', 'w', encoding='utf-8' ) as df_csv:
-    # Salvando nosso DataFrame no arquivo que foi aberto para escrita. Sem um coluna de index.
+    # Salvando nosso DataFrame no arquivo que foi aberto para escrita. Sem uma coluna de index.
     df.to_csv(df_csv, index=False)
 
 # Exibindo dataframe e os valores estatísticos da turma.
