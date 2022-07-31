@@ -48,6 +48,9 @@ df['Média'] = df.T.loc['Nota_1':'Nota_2'].mean()
 df.loc[((df['Média'] >= 7) & (df['Faltas'] <= 5)), ['Situação']] = 'Aprovado'
 df.loc[((df['Média'] < 7) | (df['Faltas'] > 5)), ['Situação']] = 'Reprovado'
 
+# Maior numero de falta
+falta_max = df['Faltas'].max()
+
 # Usando a função mean() para calcular a média total da turma.
 media_turma = df['Média'].mean()
 
@@ -61,5 +64,6 @@ with open('1 - LP - POO/2- LP/Atividade 8/alunos_situacao.csv', 'w', encoding='u
 
 # Exibindo dataframe e os valores estatísticos da turma.
 print(df)
-print(f'\nA média da turma foi: {media_turma}')
-print(f'A maior média foi: {media_max}')
+print(f'\nO maior número de faltas por aluno foi: {falta_max}')
+print(f'A média geral da turma foi: {media_turma}')
+print(f'A maior média por aluno foi: {media_max}')
