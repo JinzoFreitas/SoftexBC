@@ -29,24 +29,24 @@ with open('1 - LP - POO/2- LP/Atividade 8/notas_alunos.csv', 'w', encoding='utf-
   csv.writer(csvfile, delimiter=',').writerow(['Amanda', '6', '3', '3'])
   csv.writer(csvfile, delimiter=',').writerow(['Bruno', '9', '7', '1'])
   csv.writer(csvfile, delimiter=',').writerow(['Caio', '3', '4', '2'])
-  csv.writer(csvfile, delimiter=',').writerow(['David', '8', '6', '5'])
+  csv.writer(csvfile, delimiter=',').writerow(['David', '8', '6', '6'])
   csv.writer(csvfile, delimiter=',').writerow(['Ellen', '10', '9', '2'])
   csv.writer(csvfile, delimiter=',').writerow(['Felipe', '6', '8', '3'])
-  csv.writer(csvfile, delimiter=',').writerow(['Gilbert', '8', '7', '6'])
+  csv.writer(csvfile, delimiter=',').writerow(['Gilbert', '8', '7', '7'])
   csv.writer(csvfile, delimiter=',').writerow(['Hilda', '9', '7', '1'])
 
-# lendo o arquivo csv com pandas, arquivo sem cabeçalho.
+# lendo o arquivo csv com pandas e criando o DataFrame. Arquivo sem cabeçalho.
 df = pd.read_csv('1 - LP - POO/2- LP/Atividade 8/notas_alunos.csv', header = None)
 
-# Definindo cabeçalho para a tabela de dados.
+# Definindo cabeçalho(Header) para a tabela de dados.
 df.columns = ['Alunos','Nota_1','Nota_2','Faltas']
 
-# Criando uma Coluna com a média das linhas notas da tabela transposta da tabela original. 
+# Criando uma Coluna com a média das linhas de notas na transposta da tabela original(df.T). 
 df['Média'] = df.T.loc['Nota_1':'Nota_2'].mean()
 
 # Definindo uma condição com .loc para criar a coluna situação.
-df.loc[((df['Média'] >= 7) & (df['Faltas'] <= 3)), ['Situação']] = 'Aprovado'
-df.loc[((df['Média'] < 7) | (df['Faltas'] > 3)), ['Situação']] = 'Reprovado'
+df.loc[((df['Média'] >= 7) & (df['Faltas'] <= 5)), ['Situação']] = 'Aprovado'
+df.loc[((df['Média'] < 7) | (df['Faltas'] > 5)), ['Situação']] = 'Reprovado'
 
 # Usando a função mean() para calcular a média total da turma.
 media_turma = df['Média'].mean()
