@@ -58,7 +58,7 @@ class Book:
                         if count == row:
                             bk.write('')
                 
-# Class Music: Abstract Object
+# Class Sound: Abstract Object
 class Sound:
     def __init__(self, tone: str, timbre: str, height: str, level: int, status = False) -> str:
         self.tone = tone
