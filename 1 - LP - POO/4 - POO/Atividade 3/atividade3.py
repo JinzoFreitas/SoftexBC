@@ -9,11 +9,9 @@ A atividade pode ser realizada em qualquer linguagem de programação ou apenas 
 
 class Test():
     
-    @property
     def __init__(self, value):
         self._x = value
-
-    
+ 
     def get_value(self):
         '''Getter to return the value of x:'''
         return self._x
@@ -27,3 +25,4 @@ print(f'value of object: {test._x}')
 
 val = int(input('Enter number: '))
 test.set_value(val)
+print(f'value of object: {test._x}')
