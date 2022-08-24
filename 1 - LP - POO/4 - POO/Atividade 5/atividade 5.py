@@ -1,6 +1,7 @@
 # Softex - Recife
 # Janderson Freitas
-# Manipular strings
+# Unidade 1 - Mod 4 - Atividade 5
+# Manipulando strings
 
 '''
 Estruture três códigos, os quais devem conter uma função de manipulação de string que obtenha resultado.
